@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <%= image_tag @image_tumb %>
+
+    </p>
+    <p>
+      <strong>Name:</strong>
+      <%= @picture.name %>
+    </p>
+
+    <p>
+      <strong>Description:</strong>
+      <%= @picture.description %>
+    </p>
+
+    <%= link_to 'Edit', edit_picture_path(@picture) %> |
+    <%= link_to 'Back', pictures_path %>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+Picture.create!([
+  {name: "Bloodbrothers", description: "Description", image_file_name: "bloodbrothers_by_plugaplay-d7z5l95.jpg", image_content_type: "image/jpeg", image_file_size: 232579, image_updated_at: "2015-03-27 10:30:00", image_file_name_mini: nil},
+  {name: "Cat", description: "Desc", image_file_name: "cat_by_plugaplay-d80vgzw.jpg", image_content_type: "image/jpeg", image_file_size: 102937, image_updated_at: "2015-03-27 10:31:36", image_file_name_mini: nil},
+  {name: "Catman", description: "Desc", image_file_name: "catman__by_plugaplay-d7y51nw.jpg", image_content_type: "image/jpeg", image_file_size: 313057, image_updated_at: "2015-03-27 10:31:47", image_file_name_mini: nil},
+  {name: "Chipo", description: "Desc", image_file_name: "chipo_by_plugaplay-d83xuh1.jpg", image_content_type: "image/jpeg", image_file_size: 72297, image_updated_at: "2015-03-27 10:32:04", image_file_name_mini: nil},
+  {name: "Charter", description: "Desc", image_file_name: "concept_character_by_plugaplay-d8iel2t.jpg", image_content_type: "image/jpeg", image_file_size: 118664, image_updated_at: "2015-03-27 10:32:17", image_file_name_mini: nil},
+  {name: "Cosmozombie", description: "Desc", image_file_name: "cosmozombie_by_plugaplay-d8fkwoj.jpg", image_content_type: "image/jpeg", image_file_size: 264757, image_updated_at: "2015-03-27 10:32:46", image_file_name_mini: nil},
+  {name: "Mikasa", description: "Desc", image_file_name: "gift_mikasa_by_plugaplay-d8i91h1.jpg", image_content_type: "image/jpeg", image_file_size: 262824, image_updated_at: "2015-03-27 10:33:00", image_file_name_mini: nil},
+  {name: "Journey", description: "Desc", image_file_name: "journey_by_plugaplay-d8gi2cx.jpg", image_content_type: "image/jpeg", image_file_size: 673766, image_updated_at: "2015-03-27 10:33:14", image_file_name_mini: nil},
+  {name: "My Little", description: "Desc", image_file_name: "my_little_ghoul_by_plugaplay-d8f3hgr.jpg", image_content_type: "image/jpeg", image_file_size: 696853, image_updated_at: "2015-03-27 10:33:27", image_file_name_mini: nil},
+  {name: "Nightmare", description: "Desc", image_file_name: "nightmare_by_plugaplay-d8hfspv.jpg", image_content_type: "image/jpeg", image_file_size: 271861, image_updated_at: "2015-03-27 10:33:42", image_file_name_mini: nil},
+  {name: "Oldwoman", description: "Desc", image_file_name: "oldwoman_by_plugaplay-d8lt0vl.jpg", image_content_type: "image/jpeg", image_file_size: 477567, image_updated_at: "2015-03-27 10:33:59", image_file_name_mini: nil},
+  {name: "Ouy", description: "Desc", image_file_name: "ouyL4YmbcME.jpg", image_content_type: "image/jpeg", image_file_size: 222878, image_updated_at: "2015-03-27 10:34:15", image_file_name_mini: nil},
+  {name: "Portrait", description: "Desc", image_file_name: "portrait_by_plugaplay-d8ls6ad.jpg", image_content_type: "image/jpeg", image_file_size: 214378, image_updated_at: "2015-03-27 10:34:31", image_file_name_mini: nil},
+  {name: "Portrait2", description: "Desc", image_file_name: "portrait_by_plugaplay-d8lympm.jpg", image_content_type: "image/jpeg", image_file_size: 166236, image_updated_at: "2015-03-27 10:34:46", image_file_name_mini: nil},
+  {name: "Portrait3", description: "Desc", image_file_name: "portrait3_by_plugaplay-d8ma0em.jpg", image_content_type: "image/jpeg", image_file_size: 300043, image_updated_at: "2015-03-27 10:35:00", image_file_name_mini: nil},
+  {name: "Rabbit", description: "Desc", image_file_name: "rabbit_by_plugaplay-d7o0v7p.jpg", image_content_type: "image/jpeg", image_file_size: 269666, image_updated_at: "2015-03-27 10:35:13", image_file_name_mini: nil},
+  {name: "Untitled", description: "Desc", image_file_name: "untitled_1666_recovered_by_plugaplay-d801qdu.jpg", image_content_type: "image/jpeg", image_file_size: 192722, image_updated_at: "2015-03-27 10:35:35", image_file_name_mini: nil},
+  {name: "w40", description: "Desc", image_file_name: "w40ck9tmT4Y.jpg", image_content_type: "image/jpeg", image_file_size: 113015, image_updated_at: "2015-03-27 10:35:49", image_file_name_mini: nil},
+  {name: "Wedding", description: "Desc", image_file_name: "wedding_by_plugaplay-d8iacak.jpg", image_content_type: "image/jpeg", image_file_size: 180179, image_updated_at: "2015-03-27 10:36:02", image_file_name_mini: nil}
+])
