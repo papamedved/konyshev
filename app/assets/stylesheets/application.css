@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require jquery.fancybox
+ *= require jquery-ui.min
  *= require foundation_and_overrides
 
  */

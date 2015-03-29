@@ -4,7 +4,8 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-    @pictures = Picture.all
+    #@pictures = Picture.all
+    @pictures = Picture.order('position ASC')
   end
 
   # GET /pictures/1
@@ -41,6 +42,31 @@ class PicturesController < ApplicationController
     end
   end
 
+  def uppos
+
+    pic_hash = {}
+    i = 0
+    params.each do |key, value|
+      if (numeric? key)
+
+        i +=1
+        pic_hash[key] = i
+
+      end
+    end
+
+    pic_hash.each do |p|
+      #puts p
+      pic = Picture.find(p[1])
+      pic.position = p[0]
+      #pic.save
+      logger.info(p)
+    end
+
+
+    redirect_to action: 'index', controller: 'pictures'
+  end
+
   # PATCH/PUT /pictures/1
   # PATCH/PUT /pictures/1.json
   def update
@@ -67,6 +93,10 @@ class PicturesController < ApplicationController
   end
 
   private
+    def numeric? n
+      Float(n) != nil rescue false
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_picture
       @picture = Picture.find(params[:id])

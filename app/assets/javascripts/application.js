@@ -17,6 +17,7 @@
 //= require angular
 //= require angular-mocks
 //= require jquery.fancybox.pack
+//= require jquery-ui.min
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

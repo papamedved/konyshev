@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  resources :pictures
+  resources :pictures do
+    collection do
+      post :uppos
+    end
+  end
 
   root 'main#index'
   get 'contacts' => 'main#contacts'
   get 'about' => 'main#about'
+  #match 'pictures/update_position' => 'pictures#update_position', :via => :post
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
