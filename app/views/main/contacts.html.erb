@@ -1,18 +1,18 @@
 <div id="top" class="row">
   <div id="left" class="small-3 columns">
-    <a id="a_abo" href="">About me</a>
+    <%= link_to 'About', about_path, id: 'a_abo' %>
   </div>
   <div id="center" class="small-6 columns">
     Max Konyshev
   </div>
   <div id="right" class="small-3 columns">
-    <a id="a_con" href="">Contacts</a>
+    <u><%= link_to 'Contacts', contacts_path, id: 'a_con' %></u>
   </div>
 </div>
 
 <div id="gal" class="row">
   <div class="small-3 small-centered columns">
-    <a id="a_gal" href="">Gallery</a>
+    <%= link_to 'Gallery', root_path, id: 'a_gal' %>
   </div>
 </div>
 
@@ -24,100 +24,96 @@
 
 <div class="row">
   <div id="nav" class="small-12 columns">
-    <% @pictures.each do |p| %>
-      <a id="single_image" class="th" href="<%= p.image.url %>">
-        <%= image_tag UrlImageTumb(p.image.url) %>
-      </a>
-    <% end %>
+
   </div>
 </div>
 
 <style>
 
-#a_gal {
-  padding: 8px;
-}
+    #a_gal {
+        padding: 8px;
+    }
 
-#a_gal:hover {
-  padding: 8px;
-  color: #fff;
-  background-color: #000;
-}
+    #a_gal:hover {
+        padding: 8px;
+        color: #fff;
+        background-color: #000;
+    }
 
-#a_con {
-  padding: 8px;
-}
+    #a_con {
+        padding: 8px;
+    }
 
-#a_con:hover {
-  padding: 8px;
-  color: #fff;
-  background-color: #000;
-}
+    #a_con:hover {
+        padding: 8px;
+        color: #fff;
+        background-color: #000;
+    }
 
-#a_abo {
-  padding: 8px;
-}
+    #a_abo {
+        padding: 8px;
+    }
 
-#a_abo:hover {
-  padding: 8px;
-  color: #fff;
-  background-color: #000;
-}
+    #a_abo:hover {
+        padding: 8px;
+        color: #fff;
+        background-color: #000;
+    }
 
-.copyright {
-    font-size: 12px;
-    text-align: center;
-    color: grey;
-}
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        color: grey;
+    }
 
-.th {
-  margin: 10px;
-}
+    .th {
+        margin: 10px;
+    }
 
-#hr {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /* Gradient transparent - color - transparent */
-}
+    #hr {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        /* Gradient transparent - color - transparent */
+    }
 
-hr {
-  border: 0;
-  height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+        background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
 
-#gal {
-  font-family: 'i_still_knowregular';
-  font-size: 18px;
-  text-align: center;
-  padding-bottom: 40px;
-}
+    #gal {
+        font-family: 'i_still_knowregular';
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
 
-#top {
-  padding-top: 120px;
-  padding-bottom: 40px;
-}
+    #top {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
 
-#left {
-  text-align: right;
-  font-family: 'i_still_knowregular';
-  font-size: 18px;
-}
+    #left {
+        text-align: right;
+        font-family: 'i_still_knowregular';
+        font-size: 18px;
+    }
 
-#center {
-  font-family: 'i_still_knowregular';
-  font-size: 48px;
-  text-align: center;
-}
+    #center {
+        font-family: 'i_still_knowregular';
+        font-size: 48px;
+        text-align: center;
+    }
 
-#right {
-  text-align: left;
-  font-family: 'i_still_knowregular';
-  font-size: 18px;
-}
+    #right {
+        text-align: left;
+        font-family: 'i_still_knowregular';
+        font-size: 18px;
+    }
 </style>
 
 <div id="hr" class="row">
@@ -133,28 +129,28 @@ hr {
 </div>
 
 <script>
-$(document).foundation();
-$(document).ready(function() {
+    $(document).foundation();
+    $(document).ready(function() {
 
-	/* This is basic - uses default settings */
+        /* This is basic - uses default settings */
 
-	$("a#single_image").fancybox();
+        $("a#single_image").fancybox();
 
-	/* Using custom settings */
+        /* Using custom settings */
 
-	$("a#inline").fancybox({
-		'hideOnContentClick': true
-	});
+        $("a#inline").fancybox({
+            'hideOnContentClick': true
+        });
 
-	/* Apply fancybox to multiple items */
+        /* Apply fancybox to multiple items */
 
-	$("a.group").fancybox({
-		'transitionIn'	:	'elastic',
-		'transitionOut'	:	'elastic',
-		'speedIn'		:	600,
-		'speedOut'		:	200,
-		'overlayShow'	:	false
-	});
+        $("a.group").fancybox({
+            'transitionIn'	:	'elastic',
+            'transitionOut'	:	'elastic',
+            'speedIn'		:	600,
+            'speedOut'		:	200,
+            'overlayShow'	:	false
+        });
 
-});
+    });
 </script>

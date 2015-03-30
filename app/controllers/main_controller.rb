@@ -1,5 +1,11 @@
 class MainController < ApplicationController
   def index
-    @pictures = Picture.all
+    @pictures = Picture.order('position ASC')
+  end
+
+  def contacts
+  end
+
+  def about
   end
 end

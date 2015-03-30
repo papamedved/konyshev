@@ -1,18 +1,18 @@
 <div id="top" class="row">
   <div id="left" class="small-3 columns">
-    <a id="a_abo" href="">About me</a>
+    <u><%= link_to 'About', about_path, id: 'a_abo' %></u>
   </div>
   <div id="center" class="small-6 columns">
     Max Konyshev
   </div>
   <div id="right" class="small-3 columns">
-    <a id="a_con" href="">Contacts</a>
+    <%= link_to 'Contacts', contacts_path, id: 'a_con' %>
   </div>
 </div>
 
 <div id="gal" class="row">
   <div class="small-3 small-centered columns">
-    <a id="a_gal" href="">Gallery</a>
+    <%= link_to 'Gallery', root_path, id: 'a_gal' %>
   </div>
 </div>
 
@@ -24,11 +24,7 @@
 
 <div class="row">
   <div id="nav" class="small-12 columns">
-    <% @pictures.each do |p| %>
-      <a id="single_image" class="th" href="<%= p.image.url %>">
-        <%= image_tag UrlImageTumb(p.image.url) %>
-      </a>
-    <% end %>
+
   </div>
 </div>
 

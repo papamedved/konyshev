@@ -1,26 +1,36 @@
+<%= form_for :pictures, :url => uppos_pictures_path do |f| %>
+<div data-magellan-expedition="fixed">
+  <dl class="sub-nav">
+    <dd data-magellan-arrival="build"><p style="font-family: i_still_knowregular; font-size: larger">Max Konyshev</p></dd>
+    <dd data-magellan-arrival="js"><%= f.submit  'Обновить позиции', :class => 'button tiny success' %></dd>
+  </dl>
+</div>
 <div class="row">
-  <div class="small-11 small-centered columns">
-    <p id="notice"><%= notice %></p>
-    <%= form_for :pictures, :url => uppos_pictures_path do |f| %>
-        <%= f.submit %>
+  <div class="small-12 small-centered columns">
+        <p id="notice"><%= notice %></p>
 
-        <div id="sortable">
-          <% @pictures.each do |picture| %>
-              <div class="imblock">
-                <%= hidden_field_tag picture.id, :id %>
-                <%= image_tag UrlImageTumb(picture.image.url), class: "th" %>
-                <%=  picture.position %>
-                <%=  picture.id %>
-                <!--<div class="dimg">< link_to 'Show', picture %></div>-->
-                <!--<div class="dimg">< link_to 'Edit', edit_picture_path(picture) %></div>-->
-              </div>
-          <% end %>
-        </div>
-    <% end %>
+
+
+            <div id="sortable">
+              <% @pictures.each do |picture| %>
+                  <div class="imblock">
+                    <%= hidden_field_tag picture.id, :id %>
+                    <%= image_tag UrlImageTumb(picture.image.url), class: "th" %>
+                    <%=  picture.position %>
+                    <%=  picture.id %>
+                    <!--<div class="dimg">< link_to 'Show', picture %></div>-->
+                    <!--<div class="dimg">< link_to 'Edit', edit_picture_path(picture) %></div>-->
+                  </div>
+              <% end %>
+            </div>
+        <% end %>
   </div>
 </div>
 
 <style>
+  .border {
+      background: #FFFFFF;
+  }
   .imblock {
       width: 200px;
       height: 320px;

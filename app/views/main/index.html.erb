@@ -1,18 +1,18 @@
 <div id="top" class="row">
   <div id="left" class="small-3 columns">
-    <a id="a_abo" href="/about">About me</a>
+    <%= link_to 'About', about_path, id: 'a_abo' %>
   </div>
   <div id="center" class="small-6 columns">
     Max Konyshev
   </div>
   <div id="right" class="small-3 columns">
-    <a id="a_con" href="/contacts">Contacts</a>
+    <%= link_to 'Contacts', contacts_path, id: 'a_con' %>
   </div>
 </div>
 
 <div id="gal" class="row">
   <div class="small-3 small-centered columns">
-    <a id="a_gal" href="/">Gallery</a>
+    <u><%= link_to 'Gallery', root_path, id: 'a_gal' %></u>
   </div>
 </div>
 
