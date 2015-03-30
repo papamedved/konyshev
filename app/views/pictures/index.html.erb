@@ -16,8 +16,6 @@
                   <div class="imblock">
                     <%= hidden_field_tag picture.id, :id %>
                     <%= image_tag UrlImageTumb(picture.image.url), class: "th" %>
-                    <%=  picture.position %>
-                    <%=  picture.id %>
                     <!--<div class="dimg">< link_to 'Show', picture %></div>-->
                     <!--<div class="dimg">< link_to 'Edit', edit_picture_path(picture) %></div>-->
                   </div>
@@ -28,9 +26,6 @@
 </div>
 
 <style>
-  .border {
-      background: #FFFFFF;
-  }
   .imblock {
       width: 200px;
       height: 320px;
