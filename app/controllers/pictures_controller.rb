@@ -48,23 +48,20 @@ class PicturesController < ApplicationController
     i = 0
     params.each do |key, value|
       if (numeric? key)
-
         i +=1
         pic_hash[key] = i
-
       end
     end
 
     pic_hash.each do |p|
       #puts p
-      pic = Picture.find(p[1])
-      pic.position = p[0]
-      #pic.save
-      logger.info(p)
+      pic = Picture.find(p[0])
+      pic.position = p[1]
+      pic.save
+      #logger.info(p)
     end
-
-
     redirect_to action: 'index', controller: 'pictures'
+    #render plain: pic_hash
   end
 
   # PATCH/PUT /pictures/1
