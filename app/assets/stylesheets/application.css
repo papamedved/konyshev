@@ -29,3 +29,8 @@
      font-style: normal;
 
  }
+
+#loginform {
+    border: 1px solid grey;
+    margin-top: 20%
+}

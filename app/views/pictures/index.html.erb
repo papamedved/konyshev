@@ -3,6 +3,7 @@
   <dl class="sub-nav">
     <dd data-magellan-arrival="build"><p style="font-family: i_still_knowregular; font-size: larger">Max Konyshev</p></dd>
     <dd data-magellan-arrival="js"><%= f.submit  'Обновить позиции', :class => 'button tiny success' %></dd>
+    <dd data-magellan-arrival="js"><%= link_to 'Выход', destroy_user_session_path, method: :delete, :class => 'button tiny alert' %></dd>
   </dl>
 </div>
 <div class="row">
